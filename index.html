@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateen Hafeez | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .bio {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+            border-bottom: 1px dashed var(--accent);
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background-color: #0f172a;
+            color: var(--accent);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-family: monospace;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <h1>Mateen Hafeez</h1>
+            <p class="tagline">3rd Year Aeronautical Engineering Student at Loughborough University</p>
+            <p class="bio">Motivated and ambitious engineering student seeking practical experience through hands-on projects spanning aerodynamics, CAD modeling, and systems engineering.</p>
+            <div class="social-links">
+                <a href="mailto:mateenhafeez2006@gmail.com">Email Me</a>
+                <a href="https://github.com/your-username" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- Projects Section -->
+        <main>
+            <h2>Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-title">IMechE UAS Challenge - Systems Engineer</div>
+                    <p class="project-desc">Responsible for selecting the Electric Ducted Fan (EDF) power system for a UAV, navigating software modifications using Arduino and Cube Orange hardware, and ensuring cost-efficient electronic component sourcing[cite: 2].</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Cube Orange</span>
+                        <span class="tech-tag">Systems Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-title">CFD Modelling of a NASA Supercritical Aerofoil</div>
+                    <p class="project-desc">Built a complete CFD method in SU2 (RANS) to model aerodynamic and compressible flow behaviors across incidence and Mach number sweeps, validating findings against NASA wind tunnel data with a 2.3% error margin[cite: 2].</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">SU2 (RANS)</span>
+                        <span class="tech-tag">Excel</span>
+                        <span class="tech-tag">Aerodynamics</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-title">Short Takeoff and Landing UAV Project</div>
+                    <p class="project-desc">Utilized Siemens NX to model component center of gravity data for stability planning, and constructed the physical aircraft in the STEM LAB utilizing shop tools, CNC machines, and heatwrap[cite: 3].</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Siemens NX</span>
+                        <span class="tech-tag">CNC Machines</span>
+                        <span class="tech-tag">CAD</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-title">Structural Design and Analysis of an Aircraft Wing</div>
+                    <p class="project-desc">Designed wing geometries including spars, hinges, and ribs using Siemens NX, optimized material selection via Granta EduPack, and conducted FEA simulation achieving a 91.2% correlation to hand calculations[cite: 3].</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Siemens NX Nastran</span>
+                        <span class="tech-tag">Granta EduPack</span>
+                        <span class="tech-tag">FEA</span>
+                    </div>
+                </div>
+            </div>
+
+
+          <!-- New Project -->
+                <div class="project-card">
+                    <div class="project-title"></div>
+                    <p class="project-desc">Write a short description of what you did, the problem you solved, and the final results or outcome.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Tool 1</span>
+                        <span class="tech-tag">Tool 2</span>
+                    </div>
+                </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Mateen Hafeez. Built with GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
